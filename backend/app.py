@@ -3,9 +3,7 @@ from flask_cors import CORS
 import pytesseract
 from PIL import Image
 import os
-
-# Only needed for local Windows dev, remove or guard it for Linux servers
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+ 
 
 app = Flask(__name__)
 CORS(app)
