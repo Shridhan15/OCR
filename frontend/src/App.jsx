@@ -44,6 +44,7 @@ export default function App() {
     formData.append("image", image);
 
     try {
+      
       const res = await fetch("https://ocr-backend-ry7i.onrender.com/ocr", {
         method: "POST",
         body: formData,
